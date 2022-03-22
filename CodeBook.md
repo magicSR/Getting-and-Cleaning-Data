@@ -13,23 +13,23 @@ The process to make a tidy data set is in below.
 4.  Appropriately labels the data set with descriptive variable names
 5.  From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+* train data 70%, test data 30% among all
 
-Variable definition
-train data 70%, test data 30% among all
 
-1. features definition
-- 'features_info.txt': Shows information about the variables used on the feature vector.
-- 'features.txt': List of all features.
-- 'activity_labels.txt': Links the class labels with their activity name.
+file name : run_analysis.R
 
-2. Measure data
-- 'train/X_train.txt': Training set.
-- 'train/y_train.txt': Training labels.
-- 'test/X_test.txt': Test set.
-- 'test/y_test.txt': Test labels.
+Variables
+1. features Variables
+- features : List of all features. (file 'features.txt')
+- activity_labels : Links the class labels with their activity name. (file 'activity_labels.txt')
+
+2. Measure Variables
+- X_train : Training set. (sourcefile 'train/X_train.txt')
+- y_train : Training labels. (sourcefile 'train/y_train.txt')
+- X_test : Test set. (sourcefile 'test/X_test.txt')
+- y_test : Test labels. (sourcefile 'test/y_test.txt')
 
 The following files are available for the train and test data. Their descriptions are equivalent. 
-- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
-- 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
-- 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
-- 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
+- subject_train/subject_test : Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. (sourcefile 'train/subject_train.txt'/'test/subject_test.txt' )
+
+
